@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Titillium Web", sans-serif;
+}
+
+#mainHead {
+    background: url(blue-network-and-technology-background-free-vector.jpg);
+    border-radius: 0px 0px 130px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    display: table;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 49px;
+}
+
+ul.mainMenu {
+    float: right;
+    overflow: hidden;
+    text-align: center;
+    width: 570px;
+    padding: 20px 0px;
+}
+
+ul.mainMenu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    width: 100px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 17px;
+}
+
+ul.mainMenu li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: scale(2);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul.mainMenu li:hover::before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+ul.mainMenu li::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 102%;
+    background: #fff;
+    transform: scale(0);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+ul.mainMenu li:first-child {
+    margin-left: 0;
+}
+
+ul.mainMenu li:hover::after {
+    transform: scale(1);
+}
+
+.logo {
+    float: left;
+    width: 570px;
+    cursor: pointer;
+}
+
+ul.mainMenu li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Titillium Web", sans-serif;
+}
+
+ul.mainMenu li:hover a {
+    color: #0951a0;
+}
+
+.headerContent {
+    width: 412px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding: 120px 15px;
+    color: #fff;
+}
+
+.headerContent h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.headerContent h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#contactSection {
+    background: #fff;
+    background-size: cover;
+}
+
+div#contactSection {}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.leftImageContent {
+    float: left;
+    width: 570px;
+    padding: 56px;
+}
+
+.rightContactForm {
+    float: right;
+    width: 570px;
+    padding: 67px 100px;
+}
+
+.leftImageContent img {
+    width: 100%;
+}
+
+.sectionTitle {
+    text-align: center;
+    padding: 50px;
+    display: block;
+}
+
+.sectionTitle h1 {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.rightContactForm input[type="text"] {
+    width: 100%;
+    padding: 16px 35px;
+    margin-bottom: 25px;
+    background: #f8f5f5;
+    border: none;
+    outline: none;
+    color: #787575eb;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 17px;
+    border-radius: 0px 0px 40px 0px;
+}
+
+.rightContactForm input[type="email"] {
+    width: 100%;
+    padding: 16px 35px;
+    margin-bottom: 25px;
+    background: #f8f5f5;
+    border: none;
+    outline: none;
+    color: #787575eb;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 17px;
+    border-radius: 0px 0px 40px 0px;
+}
+
+.rightContactForm input::placeholder {
+    color: #c6c2c27d;
+}
+
+.selectOption {
+    width: 100%;
+    padding: 16px 35px;
+    margin-bottom: 25px;
+    background: #f8f5f5;
+    color: #787575eb;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 17px;
+    border-radius: 0px 0px 40px 0px;
+    appearance: none;
+    position: relative;
+}
+
+.selectOption select {
+    border: none;
+    outline: none;
+    font-family: "Titillium Web", sans-serif;
+    background: #f8f5f5;
+}
+
+.rightContactForm textarea {
+    width: 100%;
+    padding: 16px 35px;
+    margin-bottom: 25px;
+    background: #f8f5f5;
+    border: none;
+    outline: none;
+    color: #787575eb;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 17px;
+    border-radius: 0px 0px 40px 0px;
+    overflow: hidden;
+    resize: none;
+}
+
+.rightContactForm textarea::placeholder {
+    color: #c6c2c27d;
+}
+
+.rightContactForm button {
+    background: #0951a0;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 12px;
+    border: none;
+    outline: none;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 5px 5px 26px 5px;
+    box-shadow: -1px 0px 5px 0px #000000b8;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+
+
+
+#footer {
+    background: #0951a0;
+    background-size: cover;
+    border-radius: 130px 0px 0px 0px;
+}
+
+.footerWrapper {
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+.singleFooterBox {
+    width: 285px;
+    float: left;
+}
+
+.singleFooterBox:last-child {
+    padding-left: 85px;
+}
+
+.footerLogo {
+    padding-top: 45px;
+    padding-bottom: 15px;
+}
+
+.footerLogo h1 {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.languageSelector {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.languageSelector h5 {
+    float: left;
+    width: 70px;
+    color: #fff;
+    font-size: 13px;
+    padding: 3px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.languageSelector select {
+    background: none;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #ffffff3d;
+    outline: none;
+}
+
+.languageSelector select option {
+    background: #0951a0;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #ffffff3d;
+    outline: none;
+    border-top: none;
+}
+
+.footerLogo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.languageSelector ul {
+    list-style: none;
+}
+
+.languageSelector li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Titillium Web", sans-serif;
+    letter-spacing: 1px;
+}
+
+.languageSelector button {
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 10px;
+    border: 2px solid #fff;
+    outline: none;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 5px 5px 26px 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 9px 0px #00000070;
+}
+
+ul.socialMedia {
+    overflow: hidden;
+}
+
+ul.socialMedia li {
+    float: left;
+    width: 50px;
+}
+
+ul.socialMedia li::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+ul.socialMedia li a i {
+    padding: 10px 10px;
+}
+
+.mainFloatingBox {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    padding: 40px 80px;
+    border-radius: 0px 0px 100px 0px;
+    box-shadow: 2px 2px 9px 0px #00000040;
+}
+
+.floatingBoxContent {
+    float: left;
+    width: 540px;
+}
+
+.emailBox {
+    float: right;
+    width: 318px;
+    padding: 24px 0;
+    position: relative;
+}
+
+.floatingBoxContent h4 {
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.floatingBoxContent h1 {
+    font-size: 30px;
+    font-weight: 500;
+    width: 300px;
+    color: #0951a0;
+}
+
+.emailBox input[type="email"] {
+    padding: 10px 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    background: #a5a2a259;
+    border: none;
+    outline: none;
+    color: #78757547;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 17px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 3px 0px #00000014;
+}
+
+.emailBox input::placeholder {
+    color: #c6c2c27d;
+}
+
+.emailBox button {
+    background: #0951a0;
+    position: absolute;
+    left: 217px;
+    top: 19px;
+    color: #fff;
+    font-size: 20px;
+    padding: 13px 21px;
+    border: none;
+    outline: none;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 2px 2px 9px 0px #00000070;
+}
+
+#floatingBox {
+    position: relative;
+    margin-bottom: -115px;
+}
+
+#footerSec {
+    background: #0951a0;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    background: #fff;
+}
+
+.foterContent {
+    width: 1140px;
+    border-top: 1px solid #fff3;
+}
+
+.foterContent h5 {
+    width: 100%;
+    color: #fff;
+    font-weight: 100;
+    font-size: 11px;
+    padding: 20px;
+}
